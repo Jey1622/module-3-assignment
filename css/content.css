@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    background-color:rgb(29, 250, 103);
+    padding-left: 8px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.topic{
+    font-size: 1.5em;
+   font-weight: bold;
+   text-align: center;
+   padding: 10px;
+}
+@media (min-width:992px) {
+    .model{
+        display: flex;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .box{
+        min-width: 350px;
+    }
+}
+
+@media (max-width:767px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .model{
+        padding: 10px;
+    }
+}
+
